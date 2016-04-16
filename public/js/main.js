@@ -1,9 +1,9 @@
-angular.module("pure",['ngRoute'])
+angular.module("pure", ['ngRoute'])
 
 angular.module("pure").config(function($routeProvider){
 	$routeProvider
 		.when('/', {
-			templateUrl : '/html/landing.html'
+			templateUrl : '../html/landing.html'
 		})
 		.when('/products', {
 			templateUrl : '/html/products.html'
