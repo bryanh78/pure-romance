@@ -1,6 +1,6 @@
 .banner {
 	height: 15%;
-	top: 2%;
+	/*top: 2%;*/
 	background-color: pink;
 	color: white;
 	text-align: center;
@@ -9,6 +9,11 @@
 .brand {
 	height: 100%;
 	width: 100%;
+	max-width: 25px;
+}
+.bannerImg {
+	height: 300px;
+	position: relative;
 }
 .about {
 	
