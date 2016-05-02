@@ -15,6 +15,15 @@
 	height: 300px;
 	position: relative;
 }
-.about {
-	
+.flipper {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+}
+.portfolio-item, .back, .front {
+	backface-visibility: hidden;
+}
+.portfolio-item:hover {
+	transform: scale(1.2,1.2);
+	transition-duration: .5s;
 }
