@@ -1,79 +1,70 @@
-.banner {
-	height: 15%;
-	/*top: 2%;*/
-	background-color: pink;
-	color: white;
-	text-align: center;
-	text-shadow: 2px 2px 2px black;
-}
-.brand {
-	height: 100%;
-	width: 100%;
-	max-width: 25px;
-}
-.bannerImg {
-	height: 300px;
-	position: relative;
-}
-.flipperImg {
-	/*position: absolute;*/
-	height: 100%;
-	width: 100%;
-}
-/*.portfolio-item, .back, .front {
-	backface-visibility: hidden;
-}
-.portfolio-item:hover {
-	transform: scale(1.2,1.2);
-	transition-duration: .5s;
-}*/
+/*MAIN>HTML*/
+			.background {
+				background-color: pink;
+			}
+			.banner {
+				height: 15%;
+				background-color: pink;
+				color: white;
+				text-align: center;
+			}
+			.bannerImg {
+				height: 300px;
+				position: relative;
+			}
+			.brand {
+				height: 100%;
+				width: 100%;
+				max-width: 25px;
+			}
 
-/*maybe?*/
-
-.portfolio-item {
-	float: left;
-	margin: 15px;
-}
-
-.front, .back {
-	/*background: #CCC;*/
-	/*border-radius: 10px;*/
-}
-
-.front {
-	overflow: hidden;
-	width: 160px;
-	height: 160px;
-}
-
-.back {
-	font-weight: bolder;
-	font-size: 110%;
-	color: red;
-	padding: 20px;
-	width: 160px;
-	height: 160px;
-	visibility: hidden;
-	/*background-o*/
-}
-/*maybe?*/
-.front, .back, .portfolio-item{
-	/*backface-visibility: hidden;*/
-}
-.front {
-	position: absolute;
-	transition-duration: 1s;
-	filter: grayscale(100%);
-}
-
-.portfolio-item:hover .front{
-	transform: scale(1.2, 1.2);
-	filter: blur(1000px);
-	/*visibility: visible;*/
-
-}
-.portfolio-item:hover .back{
-	transform: inherit;
-	visibility: visible;
-
-}
+/*LANDING.HTML*/
+				.back {
+					font-weight: bolder;
+					font-size: 110%;
+					color: red;
+					padding: 20px;
+					width: 160px;
+					height: 160px;
+					visibility: hidden;
+				}
+				.flipperboard {
+					background-color: white;
+    				display: inline-block;
+    				margin-bottom: -10px;
+				}
+				.flipperImg {
+					height: 100%;
+					width: 100%;
+				}
+				.flipRow {
+					/*height: 190px;*/
+					text-align: center;
+				}
+				.front {
+					overflow: hidden;
+					width: 160px;
+					height: 160px;
+					position: absolute;
+					transition-duration: 1s;
+				}
+				.portfolio-item {
+					float: left;
+					margin: 15px;
+				}
+				.portfolio-item:hover .back {
+					visibility: visible;
+				}
+				.portfolio-item:hover .front{
+					transform: scale(1.2, 1.2);
+					-webkit-filter: blur(7px);
+				}
+				.textShade {
+					text-shadow: 2px 2px 2px black;
+				}
+				.topseller {
+					position: absolute;
+					height: 400px;
+					width: 400px;
+				}
+				
